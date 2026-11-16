@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b2b">
+  <title>History & Diplomatic Studies Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">📚</div>
+  <div class="brand">
+    <h1>HISTORY & DIPLOMATIC STUDIES</h1>
+    <p>STUDENT DIGITAL LIBRARY</p>
+  </div>
+  <button id="themeBtn" class="icon-btn" title="Change theme" aria-label="Change theme">☀</button>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="tag">LEARN · RESEARCH · DISCOVER</span>
+    <h2>Your study library, in one place.</h2>
+    <p>Explore historical books, primary sources, diplomatic documents, research collections and study guides from reputable libraries and open-access platforms.</p>
+    <div class="searchbar">
+      <input id="searchInput" type="search" placeholder="Search topics, periods, regions or resources..." aria-label="Search library">
+      <button id="clearSearch" aria-label="Clear search">×</button>
+    </div>
+    <div class="quick-links">
+      <a href="#collections">Browse collections</a>
+      <a href="#study-tools">Study tools</a>
+    </div>
+  </section>
+
+  <section class="notice">
+    <strong>Access note:</strong> This app is a directory, not a host for book files. It links to legitimate digital libraries and archives. Some books are free to read or download; others may require an account, library access or payment. Copyright and access conditions vary by title.
+  </section>
+
+  <section class="section-head" id="collections">
+    <div><span class="eyebrow">YOUR READING ROOM</span><h2>Browse by subject</h2></div>
+    <span id="resultCount" class="count"></span>
+  </section>
+
+  <section class="cards" id="resourceGrid">
+    <article class="resource" data-search="african history precolonial colonial postcolonial kingdoms empires africa books">
+      <div class="resource-icon">🌍</div><h3>African History</h3>
+      <p>Books and collections on African societies, kingdoms, colonialism, independence and postcolonial history.</p>
+      <a href="https://www.jstor.org/subject/africanstudies" target="_blank" rel="noopener">Explore JSTOR African Studies ↗</a>
+      <a href="https://archive.org/search?query=african%20history" target="_blank" rel="noopener">Search Internet Archive ↗</a>
+    </article>
+
+    <article class="resource" data-search="nigerian history sokoto caliphate kanem bornu benin oyo colonial nigeria independence civil war">
+      <div class="resource-icon">🇳🇬</div><h3>Nigerian History</h3>
+      <p>Research Nigerian peoples, states, institutions, colonial rule, independence and national development.</p>
+      <a href="https://archive.org/search?query=Nigeria%20history" target="_blank" rel="noopener">Find Nigerian history books ↗</a>
+      <a href="https://www.nationalarchives.gov.ng/" target="_blank" rel="noopener">National Archives of Nigeria ↗</a>
+    </article>
+
+    <article class="resource" data-search="world history ancient medieval modern europe asia america revolutions wars">
+      <div class="resource-icon">🏛️</div><h3>World History</h3>
+      <p>Ancient, medieval and modern history; civilizations, revolutions, wars and global change.</p>
+      <a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Project Gutenberg ↗</a>
+      <a href="https://books.google.com/" target="_blank" rel="noopener">Google Books ↗</a>
+    </article>
+
+    <article class="resource" data-search="diplomatic history international relations foreign policy treaties diplomacy international organizations">
+      <div class="resource-icon">🤝</div><h3>Diplomatic History</h3>
+      <p>Diplomacy, foreign policy, treaties, international relations and the history of state-to-state relations.</p>
+      <a href="https://digitallibrary.un.org/" target="_blank" rel="noopener">UN Digital Library ↗</a>
+      <a href="https://history.state.gov/" target="_blank" rel="noopener">US Office of the Historian ↗</a>
+    </article>
+
+    <article class="resource" data-search="international relations political science security war peace international law">
+      <div class="resource-icon">🌐</div><h3>International Relations</h3>
+      <p>International organizations, security, conflict, cooperation, political theory and global governance.</p>
+      <a href="https://www.doabooks.org/" target="_blank" rel="noopener">Directory of Open Access Books ↗</a>
+      <a href="https://www.un.org/en/library" target="_blank" rel="noopener">UN Library resources ↗</a>
+    </article>
+
+    <article class="resource" data-search="primary sources archives letters diaries maps photographs newspapers documents">
+      <div class="resource-icon">📜</div><h3>Primary Sources & Archives</h3>
+      <p>Original documents, historical newspapers, maps, photographs, letters and archival collections.</p>
+      <a href="https://www.loc.gov/collections/" target="_blank" rel="noopener">Library of Congress Collections ↗</a>
+      <a href="https://www.europeana.eu/" target="_blank" rel="noopener">Europeana Collections ↗</a>
+    </article>
+
+    <article class="resource" data-search="academic journals research papers articles citations scholarly history">
+      <div class="resource-icon">📰</div><h3>Academic Articles</h3>
+      <p>Discover scholarly articles and research. Check whether full text is openly available.</p>
+      <a href="https://www.doaj.org/" target="_blank" rel="noopener">Directory of Open Access Journals ↗</a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar ↗</a>
+    </article>
+
+    <article class="resource" data-search="maps historical atlases geography borders cartography">
+      <div class="resource-icon">🗺️</div><h3>Historical Maps</h3>
+      <p>Explore maps and geographic materials useful for historical and diplomatic research.</p>
+      <a href="https://www.davidrumsey.com/" target="_blank" rel="noopener">David Rumsey Map Collection ↗</a>
+      <a href="https://www.loc.gov/maps/" target="_blank" rel="noopener">Library of Congress Maps ↗</a>
+    </article>
+
+    <article class="resource" data-search="open access books free ebooks public domain history">
+      <div class="resource-icon">📖</div><h3>Open-Access Books</h3>
+      <p>Search book catalogues for books that can legally be read online or downloaded for free.</p>
+      <a href="https://www.openbookpublishers.com/" target="_blank" rel="noopener">Open Book Publishers ↗</a>
+      <a href="https://www.gutenberg.org/ebooks/" target="_blank" rel="noopener">Project Gutenberg eBooks ↗</a>
+      <a href="https://www.hathitrust.org/" target="_blank" rel="noopener">HathiTrust ↗</a>
+    </article>
+  </section>
+
+  <section class="study-section" id="study-tools">
+    <div class="section-head"><div><span class="eyebrow">STUDY WORKSPACE</span><h2>Student study tools</h2></div></div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>🔎 Search a book title</h3>
+        <p>Search several catalogues for a specific title or author.</p>
+        <div class="inline-form">
+          <input id="bookQuery" type="text" placeholder="Enter title or author">
+          <button id="bookSearchBtn">Search</button>
+        </div>
+        <div id="bookLinks" class="search-results"></div>
+      </div>
+      <div class="tool-card">
+        <h3>📝 Research notes</h3>
+        <p>Keep your own study notes on this device. Do not save passwords or sensitive personal data.</p>
+        <input id="noteTitle" type="text" placeholder="Topic or course title">
+        <textarea id="noteText" placeholder="Write your notes, key arguments, dates or references..."></textarea>
+        <div class="inline-form">
+          <button id="saveNoteBtn">Save note</button>
+          <button id="clearNoteBtn" class="secondary">Clear editor</button>
+        </div>
+        <p id="noteStatus" class="status" role="status"></p>
+        <div id="savedNotes" class="saved-notes"></div>
+      </div>
+      <div class="tool-card">
+        <h3>📅 Historical timeline planner</h3>
+        <p>Build a simple timeline for an event or period you are studying.</p>
+        <input id="eventDate" type="text" placeholder="Date or year (e.g. 1914)">
+        <input id="eventName" type="text" placeholder="Event name">
+        <textarea id="eventDetail" rows="2" placeholder="Why is this event important?"></textarea>
+        <button id="addEventBtn">Add to timeline</button>
+        <div id="timeline" class="timeline"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="research-tips">
+    <h2>Good research habits</h2>
+    <ul>
+      <li>Start with the author, title, publisher and publication date; check whether the author is a recognized scholar or primary witness.</li>
+      <li>Distinguish primary sources from secondary sources. A treaty, letter or official record is not the same as a later historian's interpretation.</li>
+      <li>Compare accounts from more than one author and consider the source's perspective, purpose and historical context.</li>
+      <li>Record page numbers and full bibliographic details as you read.</li>
+      <li>Respect copyright. Use official download or lending options; do not assume every scanned book is free to redistribute.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>HISTORY & DIPLOMATIC STUDIES DIGITAL LIBRARY</p>
+    <small>Independent student resource directory. Not affiliated with the linked libraries or institutions. External websites may change their access rules.</small>
+  </footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
